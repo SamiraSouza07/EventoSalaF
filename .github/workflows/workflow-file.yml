@@ -7,7 +7,8 @@ jobs:
    steps:
     - uses: actions/checkout@v2
     
-    - name: Executando o STEP1
+    - name: Run a one-line script
       run: |
-        echo Esse processo carrega uma mensagem
-        echo basica para entender o workflow
+        echo EU AMO DEVOPS
+        echo Usando a Branch MAIN!
+
