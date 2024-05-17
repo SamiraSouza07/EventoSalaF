@@ -1,5 +1,7 @@
 name: PrimeroJob
-on: [push]
+on: 
+  push:
+    branches: ["QA"]
   
 jobs:
   build:
@@ -7,7 +9,5 @@ jobs:
    steps:
     - uses: actions/checkout@v2
     
-    - name: Executando o STEP1
-      run: |
-        echo Esse processo carrega uma mensagem
-        echo basica para entender o workflow
+    - name: Run a one-line script
+      run: echo Usando a Branch de QA
